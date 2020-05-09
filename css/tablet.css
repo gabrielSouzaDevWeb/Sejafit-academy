@@ -1,0 +1,137 @@
+/*@media only screen and (min-width: 751px) and (max-width: 1024px){*/
+body{
+	overflow-x:hidden;
+}
+
+
+/*nav{//v1;
+	width:80% ;margin-left: 20%;
+}*/
+nav{//v2;
+
+}
+ul#menu-desktop{//v2;
+	float: right;
+
+}
+ul#menu-desktop li{
+ margin-left: -1%; 
+}
+img#logo-desktop{
+	display: none;
+}
+img#logo-mobile{
+	display: none;
+	float: left;
+	margin-left: 1%;
+	padding-top:0.3%;
+	width: 64px;
+}
+div.section-line-img section{
+	margin-top: 5%;
+	object-fit: cover;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 100px;
+	overflow-x: hidden;
+	/*object-fit: cover;*/
+}
+div.banners section.text-area-banner{
+	background-size: cover;
+	background-position:35% 50% ;
+}
+div.you-atthe-sejafit{
+	margin-top: 50%;
+}
+@media only screen and (max-width:880px) and (min-width: 750px) {
+	div.you-atthe-sejafit{
+		margin-top:59%;
+	}
+
+}
+div.you-atthe-sejafit div.show-blocks{
+	margin-top: 5%;
+	width: 95%;
+}
+div.you-atthe-sejafit div.show-blocks div.block{
+	width: 47%;
+	float: left;
+	margin: 1% 0 0 2%;
+	overflow: hidden;
+	box-shadow:0 0 10px #777;
+
+	/*temp*/
+	position: relative;
+	height: 376.6px;
+	margin-bottom: 50px;
+}
+div.you-atthe-sejafit div.show-blocks div.block:last-child{
+	margin-top: -1%;
+}
+div.block-hide-tablet{
+	display: none;
+}
+/*.display-none-tablet{
+	display: none;
+}
+
+/*#block-toggle-news{
+	display: block;
+}
+temp*/
+
+/**/
+/*laptop.css*/
+@media only screen and (min-width: 1024px){
+	body{
+		overflow-x:hidden;
+	}
+}
+div.imc{
+	background-position: left;
+}
+div.imc div.imc-form{
+  /*background-color: rgba(155,55,55,0.5);*/
+  width: 80%;
+  margin:0 auto;
+}
+div.imc div.imc-form div.form div.form-line-4{
+	padding-top: 4%;
+}
+div.imc div.imc-form div.form div.form-line-7{
+	padding-top: 2%
+}
+div#info{
+	overflow: auto;
+	height: 95%;
+	width: 80%;
+	margin-left: 10%;
+
+}
+div#info br{
+	display: block;
+}
+div#info span{
+	margin-left: -0.5em;
+}
+div#info img{
+	float: right;
+	margin-right: 33%;
+	margin-top: 4%;
+	padding-bottom: 2%;
+}
+div.pre-footer div.left:first-child{
+	
+	width: 100%;
+}
+footer p:last-child{
+	
+	margin: 0 auto;
+	position: relative;
+	float: right;
+	margin-right: 32%;
+	padding-bottom: 1%;
+	
+
+}

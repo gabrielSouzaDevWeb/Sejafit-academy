@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Um site para o meu negócio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		body{
+		 margin: 0 auto;
+		}
+		main{
+			background-color: rgba(0,0,0,0.1);
+			padding-top: 1%;
+			padding-bottom: 2%;
+		}
+		div{
+			position: relative;
+			width: 45%;
+			margin: auto;
+			background-color: #f5f5f5;
+			padding: 2% 1% 1% 2.5%;
+			margin-top: 2em;
+			margin-bottom: 10em;
+			/*box-shadow:0px 0px 20px black;*/
+		}
+		div:before, div:after
+            {
+                position: absolute;
+                content: "";
+                box-shadow: 0 0 20px #777;
+                top: 55%;
+                width: 95%;
+                margin: auto;
+                bottom: 0px;
+                right: 10px;
+                left: 10px;
+                z-index: -2;
+                border-radius: 100px/25px;
+
+            }
+		h1{
+			margin-top:0;
+		}
+		p,h1,h2,li,dt,dd{
+			font-family: sans-serif;
+			color: #333;
+		}
+		p{
+			text-indent: 1.5em;
+			font-size: 1.01em;
+		}
+		@media only screen and (max-width: 800px){
+			div:before, div:after
+            {
+            	display: none;
+                position: absolute;
+                content: "";
+                box-shadow: 0 0 20px #777;
+                top: 55%;
+                width: 95%;
+                margin: auto;
+                bottom: 0px;
+                right: 10px;
+                left: 10px;
+                z-index: -2;
+                border-radius: 100px/25px;
+
+            }
+            div{
+			position: relative;
+			width: 93%;
+			margin: auto;
+			background-color: #f5f5f5;
+			padding: 2% 1% 1% 2.5%;
+			margin-top: 0em;
+			margin-bottom: 10em;
+			/*box-shadow:0px 0px 20px black;*/
+		}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div>
+			<h1>Um site para o meu negócio</h1>
+			<ul>
+				<li>
+					<h2>Site X Instagram</h2>
+				</li>
+			</ul>
+			<p>Um site, representa a possibilidade de apresentar todos os serviços prestados por determinada empresa de maneira dinâmica, ou seja, sem ficar engessado as formas de apresentação de conteúdo das redes sociais, como por exemplo o instagram, que tem um modo de apresentação de conteúdo simples e estático, ideal para pequenos negócios como sorveterias, lanchonetes, revendedoras de produtos de beleza etc.</p>
+			<ul>
+				<li>
+					<h2>Apresentação dos serviços</h2>
+				</li>
+			</ul>
+			<p>Uma academia vai além de um simples negócio, pois, existem varias modalidades a serem apresentadas, informações importantes sobre a empresa que presta esses serviços, apresentação dos profissionais envolvidos, iportantes inforamções sobre saúde, dieta, perda de peso e cálculo de IMC. Com tanto conteúdo é notável que o instagram não de conta de organizar tudo isso de forma prática e categórica.</p>
+			<ul>
+				<li>
+					<h2>Interação instagram site</h2>
+				</li>
+			</ul>
+			<p>Como já foi dito anteriomente, o instagram por si só não da conta de apresentar todo o conteúdo da empresa, no entanto possui seus merítos, uma vez que um dos motivos pelos quais as empresas criam uma conta na rede social é justamente alcançar o público já presente na plataforma e introduzir os serviços apartir da criação de conteúdo visuais simples e de compartilhamento de atividades desenvolvidas por alunos, sendo esse compartilhamento feito pelo administrador do perfil, ou pelos próprios alunos que postam seu instagram mencionando a academia.</p>
+			<ul>
+				<li>
+					<h2><i>"Link na bio"</i></h2>
+				</li>
+			</ul>
+			<p>Supondo que a academia atraiu um possivel cliente ao seu perfil na rede social e o mesmo viu os conteúdos que são ali compartilhados e quer mais informações, onde ele encontraria essas informações.</p>
+			<dl>
+				<dt>Na biografia do perfil?</dt>
+				<dd><strong>R:</strong> Pouco eficaz, pois é muito limitado.</dd>
+				<dt>Contato pelo whatsapp?</dt>
+				<dd><strong>R:</strong>Disponibilidade limitada.</dd>
+
+			</dl>
+			<p>Sem mais, a melhor forma é criando um site onde haverá tudo que o interassado deseja saber e estará disponivel 24h bastando apenas por o link na biografia do instagram.</p>
+			<br>
+			<p>Por: Gabriel de Souza</p>
+		</div><!--
+	</main>
+	
+
+
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>SejaFit - Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<link rel="shortcut icon" href="img/logo-pp-shortcut-icon.png">
+
+	<style type="text/css">
+		body{overflow-x:hidden;}
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Galada&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Jost&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:751px) and (max-width:1024px)" href="css/tablet.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:750px)" href="css/mobile.css">
+
+</head>
+<body>
+	<main>
+		<header>
+			<!--img/sejafit-landscape.png-->
+			<nav>
+				<img id="logo-mobile" src="img/logo-pp-shortcut-icon.png">
+				<img id="logo-desktop" src="img/sejafit-landscape.png">
+
+				<ul id="menu-desktop">
+
+					<li><a href="index.html">home</a></li>
+					<li><a target="_blank" href="https://www.instagram.com/sejafit23/">sejaFit</a></li>
+					<li><a  href="index.html#imc">Consultar <i>IMC</i></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/p/B8OkmVdhIIa/">modalidades</a></li>
+					<li><a target="_blank" href="https://www.instagram.com/p/B7ZyanUhMiN/">horários</a></li>
+					<li><a target="_blank" href="https://api.whatsapp.com/send?phone=558386141242">contato</a></li>
+
+				</ul>
+
+				<div id="menu-btn">
+					<svg width="30" height="30">
+						<path d="M0,5 30,5"     stroke="#fff" stroke-width="4"/>
+						<path d="M0,15 30,15"   stroke="#fff" stroke-width="4"/>
+						<path d="M0,25 30,25"   stroke="#fff" stroke-width="4"/>
+					</svg>
+				</div>
+
+				<ul id="menu-mobile">
+
+					<li><a href="index.html">home</a></li>
+					<li><a target="_blank" href="https://www.instagram.com/sejafit23/">sejaFit</a></li>
+					<li><a  href="index.html#imc">Consultar <i>IMC</i></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/p/B8OkmVdhIIa/">modalidades</a></li>
+					<li><a target="_blank" href="https://www.instagram.com/p/B7ZyanUhMiN/">horários</a></li>
+					<li><a target="_blank" href="https://api.whatsapp.com/send?phone=558386141242">contato</a></li>
+				</ul>
+			</nav>
+			<!--<h1>seja fit</h1>
+			<h2>acedemia</h2>
+			<img src="img/capa-sejafit-1200x628-original.png">-->
+		</header>
+		<div class="section-1">
+			<section>
+				<div class="column-2 left">
+					<h2>Quem somos?</h2>
+					<p>A Sejafit é uma academia voltado para a prática de exercícios físicos. Temos como público alvo alunos que desejam perder peso ou emagrecer com saúde, e também aqueles que desejam ganhar massa muscular de uma maneira rápida e eficaz! Aqui você encontra várias modalidades como <strong>musculação</strong>, <strong>crosstreino</strong>, <strong>fitdance</strong> e <strong>funcional mirim</strong>! Além de melhorar sua alimentação com as nossas <strong>nutricionista</strong>. <strong>Tudo isso em um só lugar</strong>!!</p>
+					<p>Enfim venha nos conhecer, ser nosso aluno e fazer parte dessa nossa família que está sempre focada em proporcionar o seu melhor resultado! Pare de desculpas falando que não pode! Aqui juntos conseguiremos mudar!
+						<span style="background-color: orange; padding: 2px; border-radius: 2px;">SejaFit</span>, somos mais do que uma academia somos uma FAMÍLIA!</p>
+
+					</div>
+					<div class="column-2 right">
+						<a target="_blank" class="btn-about" href="https://api.whatsapp.com/send?phone=558386141242">mais detalhes</a>
+						<a target="_blank" class="btn-about" href="https://www.instagram.com/p/B9JthxhBbBe/">Tours 360°</a>
+					</div>
+				</section>
+			</div><!---->
+			<div class="section-line-img">
+				<section><a target="_blank" href="https://www.instagram.com/sejafit23/"><img width="109px" src="img/line-img-1.jpg">
+					<img width="108px" src="img/line-img-2.jpg">
+					<img width="108px" src="img/line-img-4.jpg">
+					<img width="108px" src="img/line-img-5.jpg">
+					<img width="108px" src="img/line-img-6.jpg">
+					<img width="108px" src="img/line-img-7.jpg">
+					<img width="108px" src="img/line-img-8.jpg">
+					<img width="108px" src="img/line-img-9.jpg">
+					<img width="108px" src="img/line-img-10.jpg">
+					<img width="108px" src="img/line-img-1.jpg">
+					<img width="108px" src="img/line-img-2.jpg">
+					<img width="108px" src="img/line-img-4.jpg">
+					<img width="108px" src="img/line-img-5.jpg">
+					<img width="108px" src="img/line-img-6.jpg">
+					<img width="108px" src="img/line-img-7.jpg">
+					<img width="108px" src="img/line-img-8.jpg">
+					<img width="108px" src="img/line-img-9.jpg">
+					<img width="108px" src="img/line-img-10.jpg"></a>
+
+
+
+
+				</section>
+			</div>
+			<div class="banners">
+				<section class="text-area-banner" id="crosstreino">
+					<h3>Crosstreino</h3>
+
+					<div class="banner-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</section>
+
+				<section class="text-area-banner" id="musculacao">
+					<h3>musculação</h3>
+
+					<div class="banner-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</section>
+
+				<section class="text-area-banner" id="fit-dance">
+					<h3>fit dance</h3>
+
+					<div class="banner-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</section>
+
+				<section class="text-area-banner" id="funcional-kids">
+					<h3>funcional kids</h3>
+
+					<div class="banner-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</section>
+
+				<section class="text-area-banner" id="nutricionista">
+					<h3>nutricionista</h3>
+
+					<div class="banner-text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</section>
+			</div>
+
+			<div class="you-atthe-sejafit">
+				<h2>Você na Seja fit</h2>
+				<h4>Acompanhe aqui as nossas novidades e eventos!</h4>
+				<div class="show-blocks news">
+
+					<div class="block block-left"><div><h3>Crosstreino</h3></div></div>
+					<div class="block block-center"><div><h3>Musculação</h3></div></div>
+					<div class="block block-right block-hide-tablet "><div><h3>FitDance</h3></div></div>
+					
+					<div   class="block block-left block-hide "><div><h3>Mais</h3></div></div>
+					<div   class="block block-left block-hide "><div><h3>Mais</h3></div></div>
+
+					
+
+					<div id="btn-show-more-news" class="btn-show-more"><p>Show more</p></div>
+
+				</div>
+
+				<div id="articles" class="show-blocks articles">
+					<h2>Fique por dentro!</h2>
+
+					<div id="" class="block block-left article-1"><div><h3>Mulheres também treinam "Braços"!</h3></div></div>
+					<div id="" class="block block-center article-2"><div><h3>O que é IMC?</h3></div></div>
+					<div id="" class="block block-right article-3"><div><h3>Eficácia do crosstreino no emagrecimento </h3></div></div>
+					<div id="block-toggle-articles" class="block block-right block-hide article-4 block-toggle-article"><div><h3>Quarentena + Treino  = Quarentreino!!</h3></div></div>
+
+					<div id="btn-show-more-articles" class="btn-show-more" ><p>Show more</p></div>
+
+				</div>
+
+			</div>
+			<span id="imc" ></span>
+			<div class="imc" >
+				<div class="imc-form">
+					<h1>IMC - Índice de Massa Corporal</h1>
+					<div  class="form">
+						<div id="here" class="form-line-1">
+							<label class="title" for="saiba seu imc">Saiba seu <i>IMC</i></label>
+						</div>
+
+						<div class="form-line-2">
+
+							<label class="pesokg label-left" for="peso">Peso (em Kg)</label>
+							
+							<label class="alturacm label-right" for="peso">Altura (em Cm)</label>
+
+						</div>
+						<div class="form-line-3">
+
+							<label class="pesokg label-left label-mobile" for="peso">Peso (em Kg)</label>
+							<input class="n-box-left intext before" type="tel" style="text-align: center;" placeholder="(Exemplo: 75)" name="peso" id="weight" size="30" maxlength="3" required="">
+
+							<label class="alturacm label-right label-mobile" for="peso">Altura (em Cm)</label>
+							<input class="n-box-right intext before" type="tel" style="text-align: center;" placeholder="(Exemplo: 175)" name="altura" id="height" size="30" maxlength="3" required="">
+
+						</div>
+						<div class="form-line-4">
+							<input type="submit" id="send" value="Calcular IMC" name="enviar">
+						</div>
+						<div class="form-line-5">
+							<label class="pesokg label-left" for="peso">Seu IMC</label>
+							
+							<label class="alturacm label-right" for="peso">Avaliação do seu IMC</label>
+						</div>
+						<div class="form-line-6">
+
+							<label class="pesokg label-left label-mobile" for="peso">Seu IMC</label>
+							<input class="n-box-left intext before" type="tel" style="text-align: center;" name="peso" id="imc-result" size="30" maxlength="3">
+
+							<label class="alturacm label-right label-mobile" for="peso">Avaliação do seu IMC</label>
+							<input class="n-box-right intext before" type="tel" style="text-align: center;"  name="peso" id="avaliacao" size="30" maxlength="3">
+						</div>
+						<div class="form-line-7">
+							<a href="#"><label class="pesokg label-left">Saiba mais</label></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="pre-footer">
+				<div class="pre-footer-left left">
+					<img width="300px" src="img/sejafit-landscape.png">
+					<div class="address">
+						<p>Rua Goiás - n° 51 - Centro</p>
+						<p>Juripiranga - Paraíba - PB</p>
+						<p>CEP  58330-000</p>
+						<p><a href="https://api.whatsapp.com/send?phone=558386141242">Tel.: (83) 9 8614-1242 </a></p>
+					</div>
+					<div class="pre-footer-menu">
+						
+						<ul >
+							<li><a href="index.html">home</a></li>
+							<li><a target="_blank" href="https://www.instagram.com/sejafit23/">sejaFit</a></li>
+							<li><a target="_blank" href="https://www.instagram.com/p/B8OkmVdhIIa/">modalidades</a></li>
+							<li><a target="_blank" href="https://www.instagram.com/p/B7ZyanUhMiN/">horários</a></li>
+							<li><a target="_blank" href="https://api.whatsapp.com/send?phone=558386141242">contato</a></li>
+
+						</ul>
+
+					</div>
+				</div>
+				<div class="pre-footer-center left"><h3 style="font-family: sans-serif;">Patrocinadores:</h3></div>
+				<!--<div class="pre-footer-right right"></div>-->
+			</div>
+			<footer>
+				<p>Desenvolvido por gabrielsouzadevweb@gmail.com</p>
+				<p>Designer gráfico aderlan.dias@gmail.com</p>
+				<p>© copyright SejaFit 2020 - Todos os Direitos Reservados.</p>
+			</footer>
+
+
+
+			<div id="shadow">
+				<div id="info">
+					<span id="X">X</span>
+					<h3 class="header">Coronavírus<br> <span>Covid-19</span></h3>
+					<div class="info-nota">
+						<p>Prezados alunos, amigos e colaboradores;</p>
+						<p>De acordo com as recomendações do Decreto Nº 40188 DE 17/04/2020, por medidas de prevenção ao contágio pelo Covid-19, nossas atividades continuarão suspensas por prazo indeterminado.</p>
+						<p class="title-article"> Fiquem atentos às nosso <a style="text-decoration: none;" target="_blank" href="https://www.instagram.com/sejafit23/"><i>Instagram</i></a>, manteremos vocês informados.</p>
+						<p>Os próximos dias serão desafiadores para todos nós, contamos com sua compreensão e colaboração para juntos sairmos mais fortes dessa crise.</p>
+
+					</div>
+
+					<img  width="200" src="img/sejafit-landscape.png">
+				</div>
+			</div>
+
+			<!--temp-->
+
+			<!--temp-->
+
+		</main>
+
+
+
+		<!--<script type="text/javascript">
+		/*var blockHide = document.querySelector(".block-hide");
+		var btnShowMore = document.querySelector(".btn-show-more");
+		 btnShowMore.onclick = function() {
+			 blockHide.style.display= "block";
+			 /* console.log(blockHide.style.display= "block");}*/
+			/*if (blockHide.style.display = "none" ) {
+				console.log(blockHide.style.display = "block"); 
+			} else {
+				console.log(blockHide.style.display = "none");
+			}*/
+
+			/* (blockHide.style.display) {
+				case "none":
+					blockHide.style.display = "block";
+					break;
+			
+				default:
+					break;
+			}
+
+		}*/
+	</script>
+	<script type="text/javascript">
+		var weight= document.querySelector("#weight");
+		var height= document.querySelector("#height");
+		var send= document.querySelector("#send");
+		console.log(send,weight,height);
+
+
+	</script>
+	<script src="script/jquery.js"></script>
+	<script type="text/javascript">
+		var h1= document.createElement("h1");
+		var h3= document.createElement("h3");
+		var p= document.createElement("p");
+		//var crosstreino = document.querySelector("#crosstreino");
+		//crosstreino.append(h3);
+		
+		crosstreino.append(h3,p);
+		
+		h3.innerHTML="lorem impsu";
+		p.innerHTML= "lorem impsu dolor se a mit2";
+
+		
+		//crosstreino.append(h1.innerHTML = "lorem", document.createElement("h2").innerHTML= " impsu", h3.innerHTML= " set aaaa met");
+
+
+		let img = document.querySelectorAll("img");
+		for (let i = 0; i < img.length; i++) {
+			console.log(img[i].innerText);
+			console.log(i);
+			
+		}
+		var ul= document.querySelector("ul").children[0];
+		document.querySelector("ul").children[0].innerHTML = "dinho alvez";
+		console.log(ul.innerHTML);
+
+	</script>
+	<script src="script/toggle.js"></script>-->
+	<script src="script/script2.js"></script>
+	<!--<script src="script/jquery.js"></script>
+	<script type="text/javascript">
+		$(
+			function(){
+				$("div#menu-btn").click(function() {
+					$("header nav ul#menu-mobile").toggle();
+				});
+				$("div#btn-show-more-news").click(function(){
+					$("div#block-toggle-news").toggle();
+				});
+				$("div#btn-show-more-articles").click(function(){
+					$("div#block-toggle-articles").toggle();
+				});
+				$(window).resize(function() {
+					var largura = $(window).width(); 
+					if ( largura >= 701 ) {
+						$("nav ul#menu-mobile").hide();   
+					}
+				});
+			}); 
+		</script>-->
+
+	<!--
+</body>
+</html>-->

@@ -1,0 +1,446 @@
+body{
+margin: 0 auto;
+/*height: 5000px;*/
+}
+ul#menu-desktop{
+
+	display: none;
+}
+nav{
+	width: 100%; margin-left: 0%;
+	border-radius: 0;
+	margin-top:0;
+	position: fixed;
+	top:0; left: 0;/**/
+	height: 70px;
+	/*clear: left;*/
+	background-color: rgba(15,15,15,1);
+	border-bottom: 2px solid orange;
+	z-index: 2;
+
+}
+
+img#logo-desktop{
+	display: none;
+}
+img#logo-mobile{
+	display: block;
+	float: left;
+	margin-left: 5%;
+	padding-top:0.3%;
+	width: 64px;
+}
+
+nav{
+	position: fixed;
+}
+header{
+	width: 100%;
+	height: 500px;
+
+	background-image: url(../img/capa-sejafit-600x314-mobile-0.png);
+	background-position: center center  ;
+	background-repeat: no-repeat;
+	background-size: cover;/**/
+
+}
+
+ul#menu-mobile{
+	display: none;
+	clear: left;
+	padding: 0;
+
+}
+
+ul#menu-mobile li{
+	display: block;
+	/*list-style: none;*/
+	width: 100%;
+
+}
+ul#menu-mobile li a{
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-family: roboto, sans-serif;
+	color: white;
+	font-size: 200%;
+	/*padding: 10px;*/
+	padding: 15px 0;
+
+	background-color:rgb(255,165,0); 
+	text-align: center;
+	border-top:1px solid #444;
+
+}
+
+div#menu-btn{
+	display: block;
+	float: right;
+	padding: 10px 12px 6px 12px;
+	margin-top: 10px;
+	margin-right: 25px;
+	border:1px solid #333;
+	border-radius: 3px;
+}
+
+div#menu-btn:hover{
+	background-color: #333;
+}
+
+/*p2*/
+div.section-1{
+	width: 90%;
+	margin-left: 5%;
+
+}
+div.section-1 section{
+
+}
+div.section-1 section div.column-2{
+	width: 100%;
+}
+div.section-1 section div.right a.btn-about{
+	margin-left: 7%;
+}
+div.section-line-img section{
+	overflow-x: hidden;
+	max-height: 100px;
+
+}
+div.section-line-img section img{
+	margin-top: -0.7%;
+}
+div.section-line-img{
+	padding-top: 5%;
+	margin-bottom: 5%;
+}
+div.banners{
+	padding-top: 0.1%;
+}
+div.banners section.text-area-banner{
+	background-size: all;
+	background-position:35% 50% ;
+	height:200px;
+	width: 100%
+}
+div.banners section.text-area-banner h3{
+	display: inline;
+	position: relative;
+	left: 50%; top:20px;
+	background-color: orange;
+	color: white;
+	font-size: 100%;
+	font-family: sans-serif;
+	padding: 1%;
+}
+#crosstreino, #musculacao, #fit-dance, #funcional-kids, #nutricionista{box-shadow: 0px 0px 7px #444;/**/}
+div.banners section.text-area-banner div.banner-text{
+	width: 60%;
+	position: relative;
+	top: 15%; left: 35%;
+	background-color: orange;
+
+
+}
+div.banners section.text-area-banner p{
+	padding: 1% 2% 1% 2%;
+	color: white;
+	font-family: sans-serif;
+	font-size: 90%;
+	font-family: 'Quicksand', sans-serif;
+}
+/**/
+div.you-atthe-sejafit{
+	width: 100%;
+}
+div.you-atthe-sejafit h2{
+	font-size: 1.9em;
+	padding-top: 0.7em;
+	letter-spacing: 0.09em;
+	margin-bottom: 5px;
+
+}
+div.you-atthe-sejafit h4{
+	font-size: 0.9em;
+	margin: 0 auto;
+}
+
+div.you-atthe-sejafit div.show-blocks{
+	width: 95%;
+}
+
+div.you-atthe-sejafit div.show-blocks div.block{
+	width: 85%;
+	float: left;
+	margin: -3% 0 0 7.5%;
+	overflow: hidden;
+	box-shadow:0 0 10px #777;
+
+	/*temp*/
+	position: relative;
+	height: 21em;
+	margin-bottom: 50px;
+}
+
+div.you-atthe-sejafit div.show-blocks div.block:first-child{margin-top: 8%;}
+div.you-atthe-sejafit div.show-blocks:last-child h2{
+	margin-bottom: 2.5em;
+}
+div.you-atthe-sejafit div.show-blocks div.block div{
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+	width: 100%;
+	height: 30%;
+	top: 65%;
+}
+div.you-atthe-sejafit div.show-blocks div.block h3{
+	color: white;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;/*open-sans*//*Montserrat*/
+	font-weight: 400;
+	font-size: 1.5em;
+	border-top: 4px solid orange;
+	padding: 2% 0 0 2%;
+
+}
+div.you-atthe-sejafit div.show-blocks div.btn-show-more{
+	display: none;
+}
+#block-toggle-articles{
+	display: block;
+}
+@media only screen and (min-width: 550px) and (max-width:751px ){
+	div.you-atthe-sejafit{
+		margin-top: 42%;
+	}
+	div.you-atthe-sejafit h2:first-child{
+		font-size: 2.5em;
+	}
+
+
+
+	div.you-atthe-sejafit div.show-blocks div.block{
+		width: 85%;
+		float: left;
+		margin: -3% 0 0 7.5%;
+		overflow: hidden;
+		box-shadow:0 0 10px #777;
+
+		/*temp*/
+		position: relative;
+		height: 30em;
+		margin-bottom: 50px;
+	}
+	div.you-atthe-sejafit div.show-blocks div.block div{
+		background-color: rgba(0,0,0,0.5);
+		position: relative;
+		width: 100%;
+		height: 30%;
+		top: 75%;
+	}
+
+}
+@media only screen and (min-width: 360px) and (max-width:550px ){
+	div.you-atthe-sejafit{
+		margin-top: 54%;
+	}
+	div.you-atthe-sejafit h2:first-child{
+		font-size: 2em;
+	}
+}
+@media only screen and /*(min-width: ) and */(max-width:360px ){
+	div.you-atthe-sejafit{
+		margin-top: 61%;
+	}
+}
+div.imc{
+	background-position: left;
+	
+
+}
+div.imc div.imc-form{
+  /*background-color: rgba(155,55,55,0.5);*/
+  width: 100%;
+  margin:0 auto;
+
+}
+div.imc div.imc-form div.form label.label-mobile{
+	display: block;
+	position: relative;
+	float: left;
+	margin-left: 10%;
+	padding-top: 5%;
+	padding-bottom: 1%;
+	font-size: 1.2em;
+}
+div.imc div.imc-form input.intext, div.imc div.imc-form input.n-box-left, div.imc div.imc-form input.n-box-right{
+	clear: both;
+	float: none !important;
+	margin-top: 0%;
+	width: 80% ;
+	height: 3em !important;
+	margin-left: 10%;
+}
+div.imc div.imc-form input.intext:first-child, 
+div.imc div.imc-form input.n-box-left:first-child, 
+div.imc div.imc-form input.n-box-right:first-child{
+	margin-top: 8%;
+}
+
+div.imc div.imc-form div.form div.form-line-2,div.imc div.imc-form div.form div.form-line-5{display: none;}
+div.imc div.imc-form div.form div.form-line-1{
+	width: 27.9%;
+	margin-left: 0 auto;
+	padding-top: 6%;
+}
+div.imc div.imc-form div.form div.form-line-1 label{
+	margin: 0 auto;
+}
+div.imc div.imc-form div.form div.form-line-3{
+	margin-top: 2%;
+	
+}
+div.imc div.imc-form div.form div.form-line-4{
+	padding-top: 12%;
+	padding-bottom: 4%;
+	margin: 0 auto;
+	width: 199px;
+}
+
+div.imc div.imc-form div.form div.form-line-5{
+	padding-top: 5%;
+}
+div.imc div.imc-form div.form div.form-line-7{
+	padding-top: 6.5%;
+	width: 21.5%;
+	margin: 0 auto;
+}
+div.imc div.imc-form div.form div.form-line-7 label{
+	margin: 0 auto;
+
+}
+div.imc div.imc-form div.form div.form-line-7 a{
+	margin: 0 auto;
+
+}
+
+
+div.imc div.imc-form div.form div.form-line-2 label{
+	
+	float: none;
+	/*clear: both;*/
+	position: relative;
+	left: 0;
+}
+
+/*covid-19*/
+div#shadow{
+	height: 110%;
+	overflow: auto;
+}
+div#info {
+	
+	width: 90%;
+	margin-left: 5%;
+	/*padding: 2em;
+	height: 90%;*/
+	margin-top: 10%;
+	overflow: auto;
+
+}
+div#info-note{
+	overflow: auto;
+}
+div#info h3{
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	margin-bottom: 0.2em;
+	font-size: 2.5em;
+}
+div#info span{
+	margin-left: -0.5em;
+}
+div#info br{
+	display: block;
+}
+div#info h3
+div#info div{
+
+	width: 75%;
+	margin: 0 auto;
+	padding: 1em;
+	height: 60%;
+	overflow: auto;
+	
+}
+div#info div p{
+	text-align: left !important;
+	font-size: 1em !important; 
+	text-indent: 1em;
+
+}
+div#info div p:nth-child(1){
+	text-align: left;
+	font-size: 1.2em !important;
+	text-indent: 1em;
+}
+
+div#info div p.title-article{
+	text-align: left;
+	font-size: 1.05em;
+	font-weight: bolder;
+}
+div#info img{
+	float: right;
+	margin-right: 22%;
+	margin-top: 4%;
+	padding-bottom: 2%;
+}
+
+div.pre-footer div.pre-footer-left{
+	width: 98% !important;
+
+}
+div.pre-footer div.pre-footer-left img{
+	width: 50%;
+	padding-left: 10%;
+}
+div.pre-footer div.pre-footer-left div.address{
+	width: 100%;
+}/***/
+footer{
+	width: 100%;
+	overflow: auto;
+	background-color: #999;
+	
+}
+
+footer p{
+	margin: 0 auto;
+	color: #444;
+	font-family: sans-serif;
+	padding-left: 5%;
+	font-size: 14px;
+
+}
+footer p:first-child{
+	padding-top: 0.2%;
+	margin-bottom: 0.1%;
+	font-size: 16px;
+}
+footer p:nth-child(2){
+	padding-bottom:1%;
+	font-size: 16px;
+
+}
+footer p:last-child{
+	
+	margin: 0 auto;
+	position: relative;
+	float: right;
+	margin-right: 5.2%;
+	padding-bottom: 1%;
+	
+
+}

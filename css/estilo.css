@@ -1,0 +1,756 @@
+body{
+	margin: 0 auto;
+	/*height: 4000px;
+	over4flow-x: hidden;*/
+}
+header{
+	width: 100%;
+	height: 670px;
+	background-image: url(../img/capa-sejafit-1200x628-original.png);
+	background-position:center center ;
+	background-repeat: no-repeat;
+	background-size: cover;/**/
+
+}
+/*div#nav{
+float: right;
+width: 50%;
+
+}*/
+/*nav{//v1;
+position: relative;
+
+	margin-top:0;
+	
+	top: 15px; left: 0;
+	width: 60%;margin-left: 40%;
+	height: 71px;
+	
+	background-color: rgba(22,22,22,0.6);
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 40px;z-index: 2;
+	
+
+}*/
+nav{/*v2*/
+	position: fixed;width: 100%;
+	
+	z-index: 2;
+	
+	background-image: linear-gradient(
+		rgba(0,0,0,0.8),
+		rgba(0,0,0,0.7),
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.0));
+
+}
+
+
+
+img#logo-desktop{
+	position: relative;
+	float:left;
+	margin-left:5%;
+	top: 7px;
+	z-index: 10;
+	width: 160px; 
+
+}
+img#logo-mobile{
+	display: none;
+}
+
+
+/*ul#menu-desktop{//v1;
+	
+	margin-top: 21px;
+	padding: 0;
+	margin-left: 5%;
+	
+
+}*/
+ul#menu-desktop{//v2;
+	float: right;
+	margin-right: 4%;
+	clear: none;
+}
+ul#menu-mobile{
+	display: none;
+}
+div#menu-btn{
+	display: none;
+}
+ul#menu-desktop li{
+	display: inline-block;
+}
+ul#menu-desktop li a{
+	color: rgb(255,165,0);
+	font-family: galada, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	padding: 21px 20px 17px 20px;
+	text-transform: capitalize;
+
+}
+
+/*ul#menu-desktop li a:hover{//v1;
+	background-color: rgb(255,165,0);
+	color: white;
+
+}*/
+ul#menu-desktop li a:hover{/*v2;*/
+	background-image: linear-gradient(rgba(255,165,0,0.9),rgba(255,165,0,0.8),rgba(255,165,0,0.0));
+	color: white;
+
+}
+
+div.section-1{
+	margin-top: 5%;
+	width: 80%;
+	margin-left: 10%;
+}
+
+section{
+	/*background-color: rgba(22,22,22,0.2);*/
+	/*box-shadow: 0px 0px 15px black;*/
+	overflow: hidden;
+}
+
+div.section-1 section div.column-2 p{
+	padding: 2% 2% 2% 6%;
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #333;
+	text-indent: 1em;
+	clear: both;
+}
+
+div.section-1 section div.left{
+	float: left;
+	width: 60%;
+
+}
+div.section-1 section h2{
+	font-size: 250%;
+	padding: 0% 2% 0% 7% ;
+	margin: 2% 0% 4% 3%;
+	border-left: 3px solid orange;
+	text-transform: uppercase;
+	font-family: roboto, sans-serif;
+	text-align: center;
+	float: left;
+	/*color: #222;*/color:rgb(255,155,0);
+	/*margin: 0 auto;
+	/*text-shadow: 0 0 10px #333;*/
+
+}
+div.section-1 section div.right{
+	float: right;
+	width: 30%;
+
+}
+
+div.section-1 section div.right a.btn-about{
+	/*text-align: center;*/
+	
+	color: rgb(255,155,0);
+	padding: 16px 22px 16px 22px;
+	float: left;
+	text-transform: capitalize;
+	text-decoration: none;
+	margin-top: 5%;
+	border:2.5px solid orange;
+	border-radius: 2px;
+	font-family: sans-serif;
+	font-size: 20px;
+	clear: both;
+
+	
+}
+div.section-1 section div.right a.btn-about:hover{
+	color: white;
+	background-color: orange;
+}
+div.section-line-img section{
+	margin-top: 5%;
+	object-fit: cover;
+	width: 150%;
+	height: auto;
+	max-height: 100px;
+	overflow-x: hidden;
+	/*object-fit: cover;*/
+}
+div.section-line-img section img{
+	margin-left: -5px;
+	padding:0;
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+div.banners{
+position: relative;
+float: left;
+left: 0;top: 0;z-index: 1;
+width: 100%;margin-top: 5%;
+
+}
+div.banners section.text-area-banner{
+	position: absolute;
+	top:0; left: 0;
+	width: 100%;
+	height: 380px;
+	margin-top: 2%;
+	/*background-image: url(../img/crosstreino.png);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	
+}
+div.banners section.text-area-banner:first-child{
+z-index: 0;
+}
+
+#crosstreino{background-image: url(../img/crosstreino.png);z-index: 5;/*margin-left: 100%;*/}
+#crosstreino h3, #crosstreino div.banner-text{background-color: orange;}
+#musculacao{background-image: url(../img/musculacao.png);z-index: 4;margin-left: 100%;display: none;}
+#musculacao h3, #musculacao div.banner-text{background-color: red;}
+#fit-dance{background-image: url(../img/fit-dance.png);z-index: 3;margin-left: 100%;display: none;}
+#fit-dance h3, #fit-dance div.banner-text{background-color: #c30b6e;}
+#funcional-kids{background-image: url(../img/funcional-kids.png);z-index: 2;margin-left: 100%;display: none;}
+#funcional-kids h3, #funcional-kids div.banner-text{background-color: blue;}
+#nutricionista{background-image: url(../img/nutricionista.png);z-index: 1;margin-left: 100%;display: none;}
+#nutricionista h3, #nutricionista div.banner-text{background-color: green; background-position: center center !important;}
+#crosstreino, #musculacao, #fit-dance, #funcional-kids, #nutricionista{box-shadow: 0px 0px 1px black;/**/}
+
+div.banners section.text-area-banner h3{
+	display: inline;
+	text-transform: capitalize;
+	position: relative;
+	left: 50%;
+	top: 1em;
+	/*background-color: orange;*/
+	color: white;
+	font-family: sans-serif;
+	font-size: 300%;
+	padding: 1%;
+}
+
+div.banners section.text-area-banner div.banner-text{
+	
+	width: 40%;
+	position: relative;
+	top: 25%; left: 45%;
+	/*background-color: orange;*/
+}
+
+div.banners section.text-area-banner p{
+	/*padding: 10% 15% 5% 15%;*/
+	padding: 1% 2% 1% 2%;
+	color: white;
+	text-indent: 1em;
+	font-family: sans-serif;
+	font-size: 150%;
+	font-family: 'Quicksand', sans-serif;
+
+
+}
+
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+div.you-atthe-sejafit{
+	margin-top:34%;
+	width: 100%;
+	clear: both;
+	/*overflow: visible;*/
+	/*temp*/
+	/*box-shadow: 0px 0px 15px black;*/
+	margin-bottom: 50px;
+}
+@media only screen and (max-width:1420px) and (min-width: 1130px) {
+	div.you-atthe-sejafit{
+		margin-top:40%;
+	}
+
+}
+@media only screen and (max-width:1130px) and (min-width: 1024px) {
+	div.you-atthe-sejafit{
+		margin-top:45%;
+	}
+
+}
+div.you-atthe-sejafit h2{
+	font-size: 3em;
+	font-family: 'Russo One', sans-serif;
+	text-transform: uppercase;
+	padding-top: 2%; margin-top: 0;
+	margin-bottom: 20px;
+	letter-spacing: 0.15em;
+	color: orange;
+}
+div.you-atthe-sejafit h2, div.you-atthe-sejafit h4{
+
+	/*font-family: sans-serif;*/
+	text-align: center;
+}
+div.you-atthe-sejafit h4{
+	font-family: sans-serif;
+	font-size: 1.5em;
+	margin: 0 auto;
+	/*margin-bottom: 1em;*/
+
+}
+
+/*blocks*/
+
+div.you-atthe-sejafit div.show-blocks{
+	overflow: hidden;
+	width: 95%;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+div.you-atthe-sejafit div.show-blocks div.block{
+	width: 25%;
+	float: left;
+	margin: 3% 0 0 6.25%;
+	overflow: hidden;
+	box-shadow:0 0 10px #777;
+	/*temp*/
+	position: relative;
+	height: 21em;
+	background-image: url(../img/line-img-5.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 50px;
+	/*max-width: 450px;*/
+
+	
+
+}
+
+/*div.you-atthe-sejafit div.show-blocks div.block:last-child{
+	display: none;
+	background-image: none;
+}*/
+
+
+div.you-atthe-sejafit div.show-blocks div.block-right{
+	
+	/*temp*/
+	background-image: url(../img/fitdance.jpg);
+}
+/*articles background*/
+div#articles div.article-1{background-image: url(../img/article-arms.jpg);}
+div#articles div.article-2{background-image: url(../img/article-imc.jpg);}
+div#articles div.article-3{background-image: url(../img/article-crosstreino.jpg);background-position: right center;}
+div#articles div.article-4{background-image: url(../img/article-quarentreino.jpg);}
+div.you-atthe-sejafit div.show-blocks div.block div{
+	background-color: rgba(0,0,0,0.6);
+	position: relative;
+	width: 100%;
+	height: 30%;
+	top: 70%;
+}
+div.you-atthe-sejafit div.show-blocks div.block h3{
+	color: white;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;/*open-sans*//*Montsrrat*/
+	font-weight: 400;
+	font-size: 1.5em;
+	border-top: 4px solid orange;
+	padding: 2% 0 0 2%;
+
+}
+
+/**/div.you-atthe-sejafit div.block-hide{
+	display: none;
+}
+@media only screen and (max-width: 1220px) and (min-width: 1025px){
+	div.you-atthe-sejafit div.show-blocks{
+		width: 100%;
+		margin: 0 auto;
+	}
+	div.you-atthe-sejafit div.show-blocks div.block{
+		height: 17em;
+	}
+}
+@media only screen and (min-width: 1800px){
+	div.you-atthe-sejafit div.show-blocks{
+		max-width: 2400px;
+	}
+	div.you-atthe-sejafit div.show-blocks div.block{
+		height: 35em;
+	}
+}
+#block-toggle-articles{
+	display: none;
+}
+/*div.block-toggle-news{
+	display: none;
+}*/
+div.you-atthe-sejafit div.btn-show-more{
+	background-color: #454545;
+	width: 15%;
+	padding: 0.5% 1% 0.5% 1%;
+	margin: 0 auto;
+	margin-bottom:4%; 
+	cursor: pointer;
+
+}
+div.you-atthe-sejafit div.btn-show-more:last-child{
+	overflow: hidden;
+	clear: both;
+
+}
+
+div.you-atthe-sejafit div.btn-show-more p{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: white;
+}
+
+div.imc{
+	background-image: url(../img/2banner-imc.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	padding-top: 2em; 
+	overflow: hidden;
+}
+div.imc div.imc-form{
+	/*background-color: rgba(255,255,255,0.5);*/
+	
+	/*position: relative;*/
+	margin-left: 5%;
+	width: 65%;
+}
+div.imc div.imc-form h1{
+	font-family: 'Russo One', sans-serif;
+	margin: 0 auto;
+	text-align: center;
+	color: orange;
+	letter-spacing: 0.05em;
+	font-size: 2.5em;
+}
+
+div.imc div.imc-form div.form label.label-mobile{
+	display: none;
+}
+div.imc div.imc-form div.form div.form-line-1{
+	/*text-align: center;*/
+	margin: 0 auto;
+	width: 25%;
+	margin-top: 2%;
+	/*float: left;*/
+	/*background-color: #edf;*/
+
+}
+div.imc div.imc-form div.form div.form-line-2{
+	margin-top: 30px;
+	/*height: 50px;*/
+	
+	clear: both;
+	overflow: hidden;
+}
+div.imc div.imc-form div.form div.form-line-2 label.label-left{
+	margin-left: 15%;
+	overflow: hidden;
+	float: left;
+	
+}
+div.imc div.imc-form div.form div.form-line-2 label.label-right{
+	margin-right: 20%;
+	overflow: hidden;
+	float: right;
+	
+}
+div.imc div.imc-form div.form div.form-line-3{
+	clear: both;
+	overflow: hidden;
+	margin-top: 1%;
+}
+div.imc div.imc-form div.form div.form-line-3 input.n-box-left{
+	float: left;
+	margin-left: 10%;
+	overflow: hidden;
+}
+div.imc div.imc-form div.form div.form-line-3 input.n-box-right{
+	float: right;
+	margin-right: 10%;
+	overflow: hidden;
+}
+div.imc div.imc-form div.form div.form-line-4{
+	clear: both;
+	overflow: hidden;
+	width: 210px;
+	padding-top: 3%;
+	margin: 0 auto;
+}
+div.imc div.imc-form div.form input#send{
+	background-color: orange;
+	border: none;
+	height: 3em;
+	width: 15em;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+}
+div.imc div.imc-form div.form div.form-line-5{
+	clear: both;
+	overflow: hidden;
+	margin-top: 3%;
+}
+div.imc div.imc-form div.form div.form-line-5 label.label-left{
+	margin-left: 17%;
+	overflow: hidden;
+	float: left;
+	
+}
+div.imc div.imc-form div.form div.form-line-5 label.label-right{
+	margin-right: 15%;
+	overflow: hidden;
+	float: right;
+	
+}
+div.imc div.imc-form div.form div.form-line-6{
+	clear: both;
+	overflow: hidden;
+	margin-top: 1%;
+}
+div.imc div.imc-form div.form div.form-line-6 input.n-box-left{
+	float: left;
+	margin-left: 10%;
+	overflow: hidden;
+}
+div.imc div.imc-form div.form div.form-line-6 input.n-box-right{
+	float: right;
+	margin-right: 10%;
+	overflow: hidden;
+}
+
+div.imc div.imc-form div.form div.form-line-7{
+	clear: both;
+	overflow: hidden;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+div.imc div.imc-form div.form div.form-line-7 label{
+	cursor: pointer;
+}
+div.imc div.imc-form div.form div.form-line-7 a{
+	text-decoration: none;
+	float: left;cursor: pointer;
+	margin-left: 44%;
+	
+}
+div.imc div.imc-form div.form div.form-line-7:after{
+	content: "";
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+div.imc div.imc-form div.form div.form-line-7 a:hover{
+	cursor: pointer;
+}
+
+div.imc div.imc-form div.form input.intext{
+	background-color: rgba(0,0,0,0.0);
+	border:2px solid orange;
+	height: 2em;
+	color: white;
+	font-family: sans-serif;
+}
+
+
+
+
+
+
+div.imc div.imc-form div.form label{
+	/*position: relative;*/
+	font-family: sans-serif;
+	font-weight: 700;
+	
+	/*left: 9.5em;*/
+	/*margin-top:1em;
+	/*background-color: #fed;
+	/*float: left;*/
+	color: #999;
+}
+
+
+
+div.imc div.imc-form div.form label.title{
+	margin: 0 auto;
+	margin-left: 3em;
+}
+
+div.pre-footer{
+	/*background-color: #dda;*/
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	overflow: hidden;
+	background-color: #ccb;
+}
+div.pre-footer > div img{
+	float: left;
+}
+
+div.pre-footer > div{
+	/*temp*/
+	width: 39%;
+	/*background-color: red;*/
+	
+}
+div.pre-footer div.left{
+	float: left;
+	margin-left: 5%
+}
+div.pre-footer div.left:first-child{
+	margin-left: 3%;
+	width: 39%;
+}
+div.pre-footer div.right{
+	float: right;
+	margin-right: 5%;
+	width: 22%;
+}
+
+div.pre-footer > div div.address{
+	float: left;
+	width: 60%;
+	clear: both;
+}
+div.pre-footer > div div.pre-footer-menu{
+	float: left;
+}
+div.pre-footer > div div.pre-footer-menu ul{
+
+}
+div.pre-footer > div div.pre-footer-menu ul li{
+	list-style: none;
+	margin-top: 0.5em;
+}
+div.pre-footer > div div.pre-footer-menu ul li a{
+	text-transform: capitalize;
+	text-decoration: none;
+	display: contents;
+	font-family: sans-serif;
+	
+
+}
+footer{
+	width: 100%;
+	overflow: auto;
+	background-color: #999;
+	
+}
+
+footer p{
+	margin: 0 auto;
+	color: #444;
+	font-family: sans-serif;
+	padding-left: 5%;
+	font-size: 13px;
+
+}
+footer p:first-child{
+	padding-top: 1%;
+	margin-bottom: 0.1%;
+	font-size: 16px;
+}
+footer p:nth-child(2){
+	padding-bottom:0%;
+	font-size: 16px;
+
+}
+footer p:last-child{
+	
+	margin: 0 auto;
+	position: relative;
+	float: right;
+	margin-right: 38%;
+	padding-bottom: 1%;
+	
+
+}
+
+/*info*/
+div.pre-footer div.pre-footer-center h3{
+	font-family: sans-serif;
+	padding-top: 1em;
+}
+div#info{
+	position: absolute;
+	z-index: 999;
+	top: 0; left: 0;
+	width: 54%;
+	margin-left:23%;
+	margin-top: 2%;
+	margin-bottom: 22%;
+
+	/*height: 90%;*/
+	background-color: white;
+	overflow: auto;
+}
+h3.header{
+	font-family: 'Jost', sans-serif;
+	text-align: center;
+	margin:0.5em 0 0.6em 0;
+	font-size: 3em;
+	color: black;
+}
+h3.header span{
+	font-family:sans-serif;
+	font-weight: 800;
+	color: orange;
+}
+div#info br{
+	display: none;
+}
+div#info div.info-nota{
+	background-color: rgba(255,172, 38, 0.7) ;
+	width: 75%;
+	margin: 0 auto;
+	padding: 2em;
+
+}
+div#info div.info-nota p{
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: sans-serif;
+	/*text-indent: 1em;*/
+
+}
+div#info div.info-nota p:nth-child(1){
+	font-size: 1.5em;
+	font-weight: 600;
+}
+/*h3.title-article{
+	font-size: 1.7em;
+	font-family: 'Jost', sans-serif;
+	text-indent: 1em;
+}*/
+div#info img{
+	float: right;
+	margin-right: 35%;
+	margin-top: 4%;
+	padding-bottom: 2%;
+}
+div#shadow{
+	position: fixed;
+	z-index: 2;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+
+span#X{
+	float: right;
+	font-family: sans-serif;
+	cursor: pointer;
+	background-color: red;
+	padding: 0.5em 1em 0.5em 1em;
+}
