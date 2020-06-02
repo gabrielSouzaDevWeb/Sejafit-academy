@@ -9,8 +9,9 @@ function indexEvents(){
 	var imc= document.querySelector("#imc-result");
     var avaliacao= document.querySelector("#avaliacao");
     //covidInfo
-    var info_covid= document.querySelector("#shadow");
-    var close_info=document.querySelector("#X");
+
+   
+
     //you-atthe-sejafit
     var btn_news= document.querySelector("#btn-show-more-news");
     var btn_articles= document.querySelector("#btn-show-more-articles");
@@ -39,10 +40,7 @@ function indexEvents(){
         toggleDisplayChildren(more_articles,4);
     });
 
-    close_info.addEventListener("click", function(){
-        toggleDisplay(info_covid);
-      //  console.log("click");
-    });
+   
 
     btn_menu.addEventListener("click", function(){
         toggleDisplay(menu_mobile);
@@ -53,6 +51,7 @@ function indexEvents(){
         calcularIMC(height.value, weight.value);
     });
 
+    //disposição de conteudos por largura da tela youatthesejafit
     function comparar() {
         
         if (tela() < 1024 && tela() > 751) {
@@ -127,3 +126,4 @@ function indexEvents(){
 }
 
 window.onload = indexEvents;
+

@@ -592,6 +592,7 @@ div.pre-footer{
 	padding-bottom: 1em;
 	overflow: hidden;
 	background-color: #ccb;
+	font-family: sans-serif;
 }
 div.pre-footer > div img{
 	float: left;
@@ -625,9 +626,7 @@ div.pre-footer > div div.address{
 div.pre-footer > div div.pre-footer-menu{
 	float: left;
 }
-div.pre-footer > div div.pre-footer-menu ul{
 
-}
 div.pre-footer > div div.pre-footer-menu ul li{
 	list-style: none;
 	margin-top: 0.5em;
@@ -645,6 +644,7 @@ footer{
 	overflow: auto;
 	background-color: #999;
 	
+	
 }
 
 footer p{
@@ -652,17 +652,17 @@ footer p{
 	color: #444;
 	font-family: sans-serif;
 	padding-left: 5%;
-	font-size: 13px;
+	font-size: 11px;
 
 }
 footer p:first-child{
 	padding-top: 1%;
 	margin-bottom: 0.1%;
-	font-size: 14px;
+	font-size: 12px;
 }
 footer p:nth-child(2){
 	padding-bottom:0%;
-	font-size: 14px;
+	font-size: 12px;
 
 }
 footer p:last-child{
@@ -676,7 +676,7 @@ footer p:last-child{
 
 }
 
-/*info*/
+/*info-covid*/
 div.pre-footer div.pre-footer-center h3{
 	font-family: sans-serif;
 	padding-top: 1em;
