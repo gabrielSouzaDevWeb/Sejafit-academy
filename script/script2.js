@@ -2,44 +2,25 @@ function indexEvents(){
     //menu
     var btn_menu=document.querySelector("#menu-btn");
     var menu_mobile= document.querySelector("#menu-mobile");
+   
+    //you-atthe-sejafit
+    var btn_news= document.querySelector("#btn-show-more-news");
+    var btn_articles= document.querySelector("#btn-show-more-articles");
+
+    var more_news2= document.querySelector(".news").children[2];
+    var more_news3= document.querySelector(".news").children[3];
+    //var more_news4= document.querySelector(".news").children[4];
+    
+    
+    var more_articles3= document.querySelector(".articles").children[3];
+    var more_articles4= document.querySelector(".articles").children[4];
+
     //calcIMC
     var weight= document.querySelector("#weight");
 	var height= document.querySelector("#height");
 	var btn_send= document.querySelector("#send");
 	var imc= document.querySelector("#imc-result");
     var avaliacao= document.querySelector("#avaliacao");
-    //covidInfo
-
-   
-
-    //you-atthe-sejafit
-    var btn_news= document.querySelector("#btn-show-more-news");
-    var btn_articles= document.querySelector("#btn-show-more-articles");
-    var more_news= document.querySelector(".news");
-    var more_articles= document.querySelector(".articles");
-    //
-   //console.log(more_news.children[more_news.childElementCount-2]);
-    //
-    window.addEventListener("scroll", function(){
-        if (window.scrollY <= 200) {
-            
-        }
-    });
-
-    btn_news.addEventListener("click", function(){
-        //(tag pai, item que permanecerão)
-        comparar();
-        
-    });
-
-    /*btn_news.addEventListener("click", function(){
-        toggleDisplay(shows);
-    });*/
-
-    btn_articles.addEventListener("click",function(){
-        toggleDisplayChildren(more_articles,4);
-    });
-
    
 
     btn_menu.addEventListener("click", function(){
@@ -47,38 +28,42 @@ function indexEvents(){
         
     });
 
+    btn_news.addEventListener("click", function(){
+       toCompareWidth(more_news2, more_news3);
+    });
+
+    btn_articles.addEventListener("click", function(){
+       
+        toCompareWidth(more_articles3,more_articles4);
+    })
+
     btn_send.addEventListener("click", function(){
         calcularIMC(height.value, weight.value);
     });
 
-    //disposição de conteudos por largura da tela youatthesejafit
-    function comparar() {
+    function toCompareWidth(item1, item2){
+        if (widthDisplay() >= 751 && widthDisplay() <= 1024) {
+            toggleDisplay(item1);
+            toggleDisplay(item2);
+            
+        } else{
+            
+            toggleDisplay(item2);
+        }
+    }
+
+    function widthDisplay() {
         
-        if (tela() < 1024 && tela() > 751) {
-            console.log("12");
-            toggleDisplayChildren(more_news,3);
-        } else  {//if(tela() > 1024)
-            toggleDisplayChildren(more_news,4);
-            console.log("21");
-        }
-
-    }
-
-    function tela() {
-        console.log("1");
-        if (window.innerWidth ){
-            window.innerWidth;
-            console.log("2");
+        if (window.innerWidth){
+            return  window.innerWidth;
         } else if(document.documentElement && document.documentElement.clientWidth){
-            document.documentElement.clientWidth;
-            console.log("3");
+            return document.documentElement.clientWidth;
         } else if(document.body){
-            document.body;
-            console.log("4");
+            return document.body;
         }
     }
 
-    function toggleDisplay(tagToggle){
+    function toggleDisplay(tagToggle){//documentar function e trocar nome
         
         var toggleDisplay = window.getComputedStyle(tagToggle, null).getPropertyValue("display");
         if(toggleDisplay == "block"){
@@ -86,21 +71,6 @@ function indexEvents(){
         } else if(toggleDisplay == "none"){
             tagToggle.style.display = "block";
         }
-    }
-
-    function toggleDisplayChildren(tagToggleAll,showBlockItem){
-        var tagStyledisplay = window.getComputedStyle(tagToggleAll.children[tagToggleAll.childElementCount-2], null).getPropertyValue("display");
-        if (tagStyledisplay == "block") {
-            for(var i=showBlockItem;i<=tagToggleAll.childElementCount;i++){
-                window.getComputedStyle(tagToggleAll.children[i+1], null).getPropertyValue("display");//?
-                tagToggleAll.children[i].style.display = "none";                
-            }
-        } else if(tagStyledisplay == "none"){
-            for(var i=showBlockItem;i<=tagToggleAll.childElementCount;i++){
-                tagToggleAll.children[i].style.display = "block";
-            }
-        }
-        
     }
 
     function calcularIMC(heightvalue,weightValue){
